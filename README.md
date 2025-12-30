@@ -2,7 +2,7 @@
 *Why ?* 
 * *the Feynman method*
 * *I want do research in AI*
-* *feel free to share any recommendations and compare your solutions to mine to the problems*
+* *feel free to share any recommendations and compare your solutions to mine*
 # books : currently reading 
 - "Understanding Deep Learning" — Simon J.D. Prince (2023)
 
