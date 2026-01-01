@@ -5,7 +5,7 @@
 * *I like learning*
 * *feel free to share any recommendations and compare your solutions to mine*
 # books : currently reading 
-- "Understanding Deep Learning" — Simon J.D. Prince (2023)
+## "Understanding Deep Learning" — Simon J.D. Prince (2023) ![Static Badge](https://img.shields.io/badge/avancement%20-%20chapitre%204%2F20-blue)
 
 # recommended reading list to master rigorous foundations of AI :
 
