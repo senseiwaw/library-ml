@@ -1,6 +1,7 @@
-# chapter 3 - shallow neural networks
+# chapter 3 - shallow neural network
+**shallow neural network have one hidden layer composed of a certain capacity of hidden units**
 
-## same methodology
+## same methodology to define a neural network, train and test
 an equation represents a **family** of input/output relations. 
 
 depending on the choice of the parameters we chose a member of this family. 
@@ -9,8 +10,8 @@ we **fit** the data to our model with a training data set by defining a cost fun
 
 we look at how well the model perform on test data (**generalization**)
 
-## hidden units
-refers to a term in calculating the output (one preliminary step in the neural network process = the calculation input/output relationship) inside an activation function
+## hidden units (also called neurons)
+refers to a term in calculating the output (one preliminary step in the neural network process = the calculation input/output relationship) that is transformed by an activation function.
 
 in the example these are equal to the composition of an activation ReLu function and a linear function
 
@@ -30,6 +31,26 @@ $$ y = f(x, **\phi**) =  \phi_0 + \phi_1\times a(\theta_{10} +\theta_{11} \times
 * both a complete drawing of the neural network and a simpler version of the same network
 * the elements on the arrows represent the weights. the number on one node is multiplied by the weights in the outcoming arrow; the result is added to the next node.
 * how many parameters ? $10$
+
+## feed-forward network
+refers to the arrows from a node on the left to a node on the right = forward directed arrows (that explains the name).
+
+## why an activation function ?
+###  history of neural networks :
+* the perceptron was discovered by Rosenblatt in 1958. It linearly combined inputs and thresholded them to make a yes/no decision.
+* Minsky & Papert published in 1969 a book to show that linear functions were unsufficient for more general input/output relations and added non linear (activation) function in hidden layers (the name **multi-layer perceptron** comes from there). Moreover they concluded that the learning algorithm developped by Rosenblatt couldn't learn the parameters.
+* It was not until the 1980s that a practical algorithm (backpropagation) was developped and significant work on neural networks resumed. 
+### activation functions : 
+* in the early days of neural nets more common activation functions included : logistic sigmoid & tanh
+* ReLU was re-popularized by such notable papers :
+* * paper by Jarett et al. in 2009 named "What is the Best Multi-Stage Architecture for Object Recognition?"
+  * paper by Nair & Hinton in 2010 named "Rectified Linear Units Improve Restricted Boltzmann Machines"
+  * paper by Glorot et al. in 2011 named "Deep Sparse Rectifier Neural Networks"
+### Why ReLU and why not ?
+* has the nice property that the derivative for positive value is the constant $1$ : which increases **stability and efficiency of learning** (see chapter 7) and contrasts with the derivatives of the sigmoid and tanh functions that become closer to zero for big numbers (in absolute value).
+* however it's derivative is zero for negative numbers. So over that input space the gradient with respect to the weights is locally flat : leading to **the dying ReLU problem**
+* other functions have been worked by tons of research papers (see page 38 of the book to get deeper)
+
 
 
 ## solution to problems 
@@ -88,3 +109,4 @@ the linear function is multiplied by a negative number so geometrically it's a s
 Then we apply ReLU which cancels the negative part (previously positive) and activates the positive part (previously positive)
 
 Overall this operation exchanged the positive and negative parts.
+
