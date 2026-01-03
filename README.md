@@ -23,6 +23,7 @@
 *going deeper in the math* :
 * "High-Dimensional Probability: An Introduction with Applications in Data Science" — Roman Vershynin
 * "Understanding Machine Learning: From Theory to Algorithms" — Shalev-Shwartz
+* "Learning Theory from first principles" - Francis Bach (2025)
 
 *deep theory* :
 * "The Principles of Deep Learning Theory" — Daniel A. Roberts, Sho Yaida & Boris Hanin
