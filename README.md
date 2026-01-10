@@ -40,3 +40,6 @@
 encyclopedy : 
 - "Deep Learning" from I.Goodfellow, Y.Bengio, A.Courville -> considered as an encyclopedy not good to learn from scratch with it
 - "Probabilistic Machine Learning: An Introduction" — Kevin Murphy (Vol 1)
+
+## Online Courses 
+* Agents Course on HuggingFace
